@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0%;
+  padding:0% ;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+  color: #fff;
+  /* background-color: #111; */
+}
+body::-webkit-scrollbar{
+  /* overflow:scroll; */
+  display: none;
+}
+
+.menuItemList{
+  letter-spacing: 1px;
+}
+
+
+.menuItemList:hover{
+  color:yellow;
+  border-bottom: yellow solid 1.4px;
+  transition: all ease-in-out 5ms linear;
+}
