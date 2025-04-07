@@ -37,7 +37,7 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div className='md:max-w-screen-xl md:h-[100vh] flex flex-col justify-center mx-auto px-10'>
+    <div className='md:max-w-screen-xl md:h-[100vh] h-[40vh] flex flex-col md:justify-end mx-auto px-10 md:py-0 py-10'>
       <h1 className='text-[2vw] text-yellow-500 font-semibold tracking-[1px] mb-4'>Projects</h1>
       <Swiper
         modules={[Navigation, Pagination]}
@@ -47,22 +47,22 @@ const Projects = () => {
         pagination={{ clickable: true }}
         navigation
         loop={true}
-        className='w-[70vw] h-[70vh]'
+        className='w-[80vw] h-[24vh] md:h-[80vh]'
       >
         {projectData.map((project, index) => (
           <SwiperSlide key={project.id}>
-            <div className='w-full h-[65vh] object-contain relative'>
+            <div className='w-full md:h-[70vh] h-[20vh] object-contain relative'>
               <img className='w-full h-full' src={project.image} alt={project.title} />
-              <div className='w-full h-full absolute bg-[#00000061] top-0 left-0 group'>
-                <h1 className='text-[7vw] font-semibold ml-5 absolute right-4 -top-6 z-50 text-zinc-300'>{`0${index + 1}`}</h1>
+              <div className='w-full h-full absolute bg-[#000000a5] top-0 left-0 group'>
+                <h1 className='text-[7vw] font-semibold ml-5 absolute right-4 md:-top-6 z-50 text-zinc-300'>{`0${index + 1}`}</h1>
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <h1 className='text-[1.2vw] absolute left-0 font-normal -bottom-10 flex items-center gap-4 text-white'>
+                  <h1 className='md:text-[1.2vw] text-[2.2vw] absolute left-0 font-normal -bottom-10 flex items-center gap-4 text-white'>
                     {project.title} <MdOutlineArrowOutward />
                   </h1>
                 </a>
                 <div className='w-full absolute bottom-0 left-0 bg-[#0000007e] px-6 py-4 hidden group-hover:block duration-1000 ease-linear'>
-                  <h1 className='text-[1.3vw] mb-4 text-white'>Tech Stack: {project.techStack}</h1>
-                  <p className='text-white'>{project.description}</p>
+                  <h3 className='md:text-[1.3vw] text-[2vw] md:mb-4 mb-2 text-white'>Tech Stack: {project.techStack}</h3>
+                  <p className='md:text-[1.1vw] text-[1.6vw] text-white'>{project.description}</p>
                 </div>
               </div>
             </div>

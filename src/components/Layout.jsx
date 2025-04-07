@@ -6,7 +6,7 @@ import Contact from '../pages/Contact'
 
 const Layout = () => {
   return (
-    <div className='w-screen overflow-auto'>
+    <div className=''>
       <Home/>
       <About/>
       <Projects/>

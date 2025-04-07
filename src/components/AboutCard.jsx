@@ -1,26 +1,22 @@
+// components/AboutCard.jsx
 import React from "react";
 
 const AboutCard = ({ item }) => {
   return (
-    <>
-      <div className="w-[22vw] h-[10vw] bg-zinc-800 rounded-lg mt-[2vw] py-[1vw] px-[2vw] flex flex-col shadow-md border shadow-white justify-between">
-        <div>
-          {item.position && <p className="text-xl ">{item.position}</p>}
-          {item.degree && <p className="text-xl">{item.degree}</p>}
-          {item.certificate && <p className="text-xl">{item.certificate}</p>}
-          {/* {item.skill && <h3 className="text-[1vw] font-semibold">{item.skill}</h3>} */}
-        </div>
-        <div>
-          {item.score && (<h3 className="text-sm font-semibold">{item.score}</h3>)}
-          <div className="w-full flex justify-between">
-            {item.icon && <img className="w-fit h-20 mb-5 text-center" src = {item.icon} alt="" />}
-            {item.companyName && (<h3 className="text-md text-gray-500 font-semibold">{item.companyName}</h3>)}
-            {item.institutionName && (<h3 className="text-md text-gray-500 font-semibold">{item.institutionName}</h3>)}
-            <p className="text-sm text-gray-400 mt-1">{item.duration}</p>
-          </div>
-        </div>
+    <div className="w-[80vw] md:w-[22vw] h-[18vh] bg-zinc-800 rounded-lg p-4 shadow-md flex flex-col justify-between gap-4 shadow-slate-400">
+      <div>
+        {item.position && <p className="text-lg font-medium">{item.position}</p>}
+        {item.degree && <p className="text-lg font-medium">{item.degree}</p>}
+        {item.certificate && <p className="text-lg font-medium">{item.certificate}</p>}
       </div>
-    </>
+      <div className="text-sm text-zinc-400 mt-2">
+        {item.score && <p>{item.score}</p>}
+        {item.duration && <p>{item.duration}</p>}
+        {item.companyName && <p>{item.companyName}</p>}
+        {item.institutionName && <p>{item.institutionName}</p>}
+        {item.icon && <img src={item.icon} alt="" className="w-16 h-16 mt-2" />}
+      </div>
+    </div>
   );
 };
 

@@ -1,29 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Resume from '../assets/Deependra resume .pdf'
+import React from 'react';
 import { MdOutlineFileDownload } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import Profile from "../assets/laptop.webp"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Resume from '../assets/Deependra_Resume.pdf';
+import Profile from "../assets/laptop.webp";
 
 export const Home = () => {
   return (
-    <div className='md:max-w-screen-xl md:h-screen flex items-center justify-center mx-auto px-10 pt-[10vw]'>
-      <div className="intro md:w-[50vw] md:h-auto w-[85vw] flex md:justify-center justify-end flex-col md:static absolute bottom-[8vh] left-[10vw]">
-        <h2 className='md:text-[1.8vw] text-[6vw] tracking-[1px] mb-2' >Hello,</h2>
-        <h1 className='md:text-[4vw] text-[10vw] tracking-[1px] font-bold leading-none mb-3'>I'm <span className='text-[yellow]'>Deependra Singh  <br /> </span>Web Developer</h1>
-        <p className='md:text-[1vw] text-[4vw] tracking-[1px] leading-none text-zinc-400'>I'm a full-stack Web developer with a passion for creating engaging and user-centric experiences.</p>
-        <div className='mt-10 flex items-center md:gap-[2vw] gap-[8vw]'>
-          <a href={Resume} download='Resume'><button className='contactButton md:w-[12vw] w-[45vw] bg-white text-black rounded-full py-[0.5vw] font-semibold tracking-[1px] flex items-center justify-center gap-[0.5vw] md:text-[1vw] text-[4vw]'>Download CV <MdOutlineFileDownload className='fill-black bg-transparent md:text-[1.5vw] text-[5vw]' /></button></a>
-          <a href="https://github.com/thakurdeependra98" className='bg-white md:p-[0.5vw] p-[1vw] rounded-full'><FaGithub className='fill-black bg-transparent md:text-[1.5vw] text-[5vw]' 
-          /></a>
-          <a href="https://www.linkedin.com/in/deependra-singh-5b9574244/" className='bg-white md:p-[0.5vw] p-[1vw] rounded-full'><FaLinkedinIn className='fill-black bg-transparent md:text-[1.5vw] text-[5vw]'  /></a>
+    <div className="max-w-screen-xl min-h-screen flex flex-col-reverse md:flex-row items-center md:justify-between justify-center mx-auto px-6 md:py-0">
+      
+      <div className="md:w-1/2 w-full text-center md:text-left">
+        <h2 className="text-2xl md:text-xl text-gray-400 mb-2">Hello,</h2>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+          I'm <span className="text-yellow-400">Deependra Singh</span><br /> Web Developer
+        </h1>
+        <p className="text-gray-400 text-base md:text-lg mb-6">
+          I'm a full-stack Web developer with a passion for creating engaging and user-centric experiences.
+        </p>
+        <div className="flex justify-center md:justify-start items-center gap-4 flex-wrap">
+          <a href={Resume} download="Resume">
+            <button className=" border-2 rounded-full px-6 py-2 font-semibold flex items-center gap-2 text-sm md:text-base">
+              Download CV <MdOutlineFileDownload className="text-lg" />
+            </button>
+          </a>
+          <a href="https://github.com/thakurdeependra98" target="_blank" rel="noreferrer" className="border-2 p-3 rounded-full">
+            <FaGithub className="text-black text-xl" />
+          </a>
+          <a href="https://www.linkedin.com/in/deependra-singh-5b9574244/" target="_blank" rel="noreferrer" className=" p-3 rounded-full border-2">
+            <FaLinkedinIn className="text-black text-xl" />
+          </a>
         </div>
       </div>
-      <div className='image md:w-[40vw] w-screen md:h-auto h-[100vh] flex md:items-center md:justify-center'>
-          <img className='md:h-[35vw] h-[80vh] opacity-30 md:opacity-100' src={Profile} alt="" />
+      <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
+        <img src={Profile} alt="Profile" className="w-3/4 md:w-[70%] max-w-[500px] opacity-70 md:opacity-100" />
       </div>
     </div>
-  )
-}
-export default Home
+  );
+};
+
+export default Home;
