@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "dom": "^0.0.3",
+    "lucide": "^0.522.0",
+    "lucide-react": "^0.522.0",
     "ract": "^0.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

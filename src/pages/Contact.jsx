@@ -5,18 +5,18 @@ import { IoHomeSharp } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className='max-w-screen-xl w-full h-[100vh] flex flex-col justify-center mx-auto px-4 md:px-10 py-10'>
+    <div className='max-w-screen-xl w-full flex flex-col justify-center mx-auto px-4 py-20'>
       <h1 className='text-xl sm:text-2xl md:text-[2vw] text-yellow-500 font-semibold tracking-[1px] mb-12'>
-        Contact us
+        Contact me
       </h1>
 
       <div className='w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 relative'>
 
         <div className='w-full md:w-[30vw]'>
-          <h3 className='text-base sm:text-lg md:text-[1.1vw] tracking-[1px] mb-8 font-medium'>
+          <h3 className='text-base sm:text-lg md:text-[1.1vw] text-white mb-8 font-medium'>
             Feel free to contact us any time. I will get back to you as soon as I can!
           </h3>
-          <form className='w-full flex flex-col gap-4'>
+          <form className='w-full flex flex-col gap-4 text-white'>
             <input
               type='text'
               placeholder='Your Name'
@@ -33,15 +33,15 @@ const Contact = () => {
             />
             <button
               type='submit'
-              className='w-full p-3 bg-yellow-500 text-white rounded-md tracking-[1px] mt-6'
+              className='w-full p-3 bg-[#23b623] text-white rounded-md tracking-[1px] mt-6'
             >
               Send Message
             </button>
           </form>
         </div>
 
-        <div className='w-full md:w-[30vw] bg-zinc-800 p-6 md:p-10 rounded-md z-40'>
-          <h3 className='text-lg md:text-[1.3vw] tracking-[1px] leading-6 mb-10 font-medium'>
+        <div className='w-full md:w-[30vw] bg-white p-6 md:p-10 rounded-md z-40 md:mr-20'>
+          <h3 className='text-lg md:text-[1.3vw] leading-6 mb-10 font-semibold'>
             My Contact Information
           </h3>
           <p className='text-sm md:text-[1.2vw] mt-3 flex items-center gap-4'>
@@ -55,7 +55,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className='hidden md:block w-[20vw] h-[52vh] bg-yellow-500 z-30 absolute -top-8 -right-16 rounded-lg'></div>
+        <div className='hidden md:block w-[20vw] h-full bg-[#23b623] z-30 absolute -top-8 -right-0 rounded-lg'></div>
       </div>
     </div>
   );
