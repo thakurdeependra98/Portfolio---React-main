@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div className="max-w-screen-xl min-h-screen flex flex-col-reverse md:flex-row items-end md:justify-between justify-end mx-auto px-6 md:pb-28 text-white relative">
       
-      <div className="md:w-1/2 w-full text-center md:text-left absolute pl-10 sm:pl-0 bottom-20 md:bottom-32">
+      <div className="md:w-1/2 w-full text-center md:text-left absolute pl-10 sm:pl-0 bottom-36 md:bottom-32">
         <h2 className="text-xl md:text-xl mb-2">Hello,</h2>
         <h1 className="text-2xl md:text-6xl font-normal mb-4">
           I'm <span className="text-yellow-500 font-semibold">Deependra Singh</span> <br /> Web Developer
@@ -30,8 +30,8 @@ export const Home = () => {
           </a>
         </div>
       </div>
-      <div className="md:w-1/2 w-full flex md:justify-end justify-center mb-8 md:mb-0 md:absolute right-0 sm:bottom-48 mt-32 md:mt-0">
-        <img src={Profile} alt="Profile" className="w-3/4 md:w-[400px] opacity-70 md:opacity-100" />
+      <div className="md:w-1/2 w-full flex md:justify-end justify-center mb-8 md:mb-0 md:absolute right-0 sm:bottom-24 mt-32 md:mt-0">
+        <img src={Profile} alt="Profile" className="w-[400px] md:w-[450px] opacity-70 md:opacity-100" />
         {/* <div className='w-32 h-32 bg-[#23b623] rounded-full'></div> */}
       </div>
     </div>

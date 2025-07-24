@@ -26,13 +26,13 @@ const Navbar = () => {
             <FaRegMessage className='text-[1.2vw]' /> Contact me
           </button>
         </div>
-        <div className='md:hidden'>
+        {/* <div className='md:hidden'>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <HiX className='text-white text-3xl' /> : <HiMenuAlt3 className='text-white text-3xl' />}
           </button>
-        </div>
+        </div> */}
       </nav>
-      {menuOpen && (
+      {/* {menuOpen && (
         <div className='md:hidden bg-zinc-900 px-6 py-4 flex flex-col gap-4 absolute w-full left-0 z-40'>
           <Link to="/" onClick={() => setMenuOpen(false)} className="text-white text-lg">Home</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className="text-white text-lg">About</Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <button className="w-full bg-yellow-500 text-black rounded-md py-2 font-semibold mt-2">Contact me</button>
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

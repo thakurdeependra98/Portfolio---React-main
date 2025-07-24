@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Aboutdetails from '../components/Aboutdetails';
 import react from '../assets/react.png';
 import node from '../assets/node-js.png';
-// import mongoDb from '../assets/mongoDb.png';
+import mongoDb from '../assets/mongodb.webp';
 import express from '../assets/express.png';
 import tailwind from '../assets/Tailwind_CSS_Logo.svg.png';
 import frontend from '../assets/frontend.png';
@@ -86,7 +86,7 @@ const About = () => {
       { icon: react, title: "React JS" },
       { icon: node, title: "Node JS"},
       { icon: express, title: "Express JS" },
-      // { icon: mongoDb, title: "MongoDB" },
+      { icon: mongoDb, title: "MongoDB" },
     ]
   };
 
