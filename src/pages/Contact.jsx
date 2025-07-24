@@ -9,7 +9,6 @@ const Contact = () => {
       <h1 className='text-xl sm:text-2xl md:text-[2vw] text-yellow-500 font-semibold tracking-[1px] mb-12'>
         Contact me
       </h1>
-
       <div className='w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10 relative'>
 
         <div className='w-full md:w-[30vw]'>
